@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+@import "welcome";
+@import "header";
+@import "about";
+@import "components";
+@import "courses";
+@import "news";
