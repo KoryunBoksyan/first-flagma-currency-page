@@ -8,6 +8,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 20px;
         padding: 54px 0;
 
         .news_list {
@@ -16,6 +17,7 @@
             justify-content: space-between;
 
             .news_card {
+                position: relative;
                 width: 30%;
                 padding: 0;
                 display: flex;
@@ -35,6 +37,7 @@
 
                 p {
                     margin: 18px;
+                    padding-bottom: 40px;
                 }
 
                 span {
@@ -46,7 +49,46 @@
                         margin-right: 8px;
                     }
                 }
+                .arrow {
+                    position: absolute;
+                    border: 2px solid white;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    right: 8px;
+                    bottom: 8px;
+                    .vector {
+                        color: #5E8AB4;
+                        width: 16px;
+                        height: 16px;
+                    }
+                    .new_vector {
+                        color: brown;
+                    }
+                }
+                .link {
+                    position: absolute;
+                    bottom: -60px;
+                    right: 8px;
+                    border-bottom: 1px dashed #5E8AB4;
+                    margin-bottom: 16px ;
+                    a {
+                        text-decoration: none;
+                        font-size: 18px;
+                        color: #5E8AB4;
+                        margin-right: 8px;
+                        padding: 0 8px;
+                        cursor: pointer;
+
+                    }
+                }
             }
+        }
+        .news_new_page {
+            margin-bottom: 16px;
         }
     }
 }
